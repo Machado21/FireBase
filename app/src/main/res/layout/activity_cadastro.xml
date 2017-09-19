@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.machado.firebase.CadastroActivity">
+
+    <EditText
+        android:id="@+id/nome_edit_text_cad"
+        style="@style/campos"
+        android:hint="Nome"
+        android:inputType="textPersonName|textAutoCorrect|textAutoComplete|textCapSentences"/>
+
+    <EditText
+        android:id="@+id/cpf_edit_text_cad"
+        style="@style/campos"
+        android:hint="CPF"
+        android:inputType="numberSigned"/>
+
+    <EditText
+        android:id="@+id/e_mail_edit_text_cad"
+        style="@style/campos"
+        android:hint="e-mail"
+        android:inputType="textEmailAddress" />
+
+    <EditText
+        android:id="@+id/password_edit_text_cad"
+        style="@style/campos"
+        android:hint="Senha"
+        android:inputType="textPassword" />
+
+    <EditText
+        android:id="@+id/password_confirm_edit_text_cad"
+        style="@style/campos"
+        android:hint="Confirmar Senha"
+        android:inputType="textPassword" />
+
+    <Button
+        android:id="@+id/registrar_edit_text_cad"
+        style="@style/campos"
+        android:text="Cadastrar"
+        android:onClick="cadastrar"/>
+
+    <TextView
+        android:id="@+id/login_text_view_intent"
+        style="@style/campos"
+        android:layout_marginTop="5dp"
+        android:text="Login"
+        android:gravity="right"/>
+</LinearLayout>
